@@ -9,5 +9,26 @@
 </table> 
 </div>
 	   
+	   
+	   
+......................
+<table>
+	<thead><strong>Convention Steering Committee</strong></thead>
+	<tbody>
+		<tr ng-repeat="x in names">
+			<td>{{ x.Name }}</td>
+			<td>{{ x.Email }}</td>
+		</tr>
+  </tbody>
+</table>
+......................controller........
+.controller('AccountCtrl', function($scope, $http) {
+   $http.get("http://www.techroversolutions.com/Ionic_Mayu/fetch_member.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+....................
+
+
+
   </ion-content>
 </ion-view>

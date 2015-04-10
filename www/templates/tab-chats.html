@@ -1,17 +1,26 @@
-<ion-view title="Details">                
-         <ion-content>
-            <ion-slide-box ng-controller="DetailCtrl" pager-click="navSlide(index)" auto-play="true" does-continue="true">
-                <ion-slide>
-                    <img style="width: 100%" src="img/s1.jpg">
-                </ion-slide>
-                <ion-slide>
-                    <img style="width: 100%" src="img/s2.jpg">
-                </ion-slide>
-                <ion-slide>
-                    <img style="width: 100%" src="img/s3.jpg">
-                </ion-slide>
-            </ion-slide-box>
-        </ion-content>
-              
-            
+<ion-view view-title="Share">
+  <ion-content class="padding" ng-controller="ChatsCtrl">
+   
+   
+   
+	<div class="list">
+		<a class="item item-icon-left bg" href="#tab/venue">
+			<i class="icon ion-social-facebook"></i>
+				Facebook
+		</a>
+		<a class="item item-icon-left bg" href="#">
+			<i class="icon ion-social-whatsapp"></i>
+				WhatsApp
+		</a>
+		<a class="item item-icon-left bg" href="#">
+			<i class="icon ion-email"></i>
+				Mail
+		</a>
+		<a class="item item-icon-left bg href="#">
+			<i class="icon ion-social-twitter"></i>
+				Twitter
+		</a>
+	</div>
+
+  </ion-content>
 </ion-view>

@@ -6,7 +6,22 @@ padding-bottom: 20%;
 padding-left: 5%
 padding-right: 5%;
 
+}
+.spcs_img{
+height: auto%;
+width: 100%;
+}
 
+.bg{
+background-color: #F2F2F2;
+}
+.p
+{
+color: black;
+}
+
+.your-logo-css {
+      font-family: AnyFonts;
 }
 .img
 {
@@ -52,7 +67,14 @@ width: 100%;
 .home_img
 {
 height: 100%;
-
 }
 
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 100%;
+}
 

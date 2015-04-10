@@ -89,11 +89,38 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
    
+   .state('tab.texas_spcs', {
+    url: '/texas_spcs',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/texas_spcs.html'        
+      }
+    }
+  })
+   
+   .state('tab.sponsor', {
+    url: '/sponsor',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/sponsor.html'        
+      }
+    }
+  })
+   
     .state('tab.gallery', {
     url: '/gallery',
     views: {
       'tab-dash': {
         templateUrl: 'templates/gallery.html'        
+      }
+    }
+  })
+  
+  .state('tab.news', {
+    url: '/news',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/news.html'        
       }
     }
   })
@@ -114,12 +141,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.r_map', {
+    url: '/r_map',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/r_map.html'        
+      }
+    }
+  })
   
   .state('tab.account', {
-    url: 'http://www.spcsusa.org/',
+    url: '/account',
     views: {
       'tab-account': {
-        Url: 'http://www.spcsusa.org/',
+        templateUrl: 'templates/tab-account.html',
         controller: 'AccountCtrl'
       }
     }
@@ -132,16 +167,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'ChatsCtrl'
         }
       }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
     });
+   
   $urlRouterProvider.otherwise('/tab/dash');
 
 });

@@ -1,0 +1,11 @@
+<ion-view title="Our Sponsors">
+<ion-content  class="padding" ng-controller="SponsorCtrl" ng-init="loadImages()">
+ 
+     <div class="row" ng-repeat="image in images">
+        <div class="col col-100" ng-if="$index < images.length">
+				<center><img ng-src="{{images[$index].src}}" width="80%" height="auto"/></center>
+        </div>       
+    </div>
+	
+</ion-content>
+</ion-view>

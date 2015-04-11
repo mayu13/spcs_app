@@ -1,0 +1,31 @@
+<ion-view title="Convention Chapters Coordinators">
+<ion-content class="padding">
+   <div ng-app="myApp" ng-controller="ChaptersCtrl">
+	
+
+	<table>
+	<tr>
+			<td class="advisory_head"><h4><b><font color="#0095bd">City</font></b></h4></td>
+			<td class="advisory_head"><h4><b><font color="#0095bd">Name</font></b></h4></td>
+		
+			<td class="advisory_head"><h4><b><font color="#0095bd">Email</font></b></h4></td>
+			<td class="advisory_head"><h4><b><font color="#0095bd">Phone</font></b></h4></td>
+
+		</tr>
+	<tbody ng-repeat="x in names" >
+
+		
+	<tr >
+			<td class="advisory1"><b>{{ x.City }}</b></td>
+			<td class="advisory1"><b>{{ x.Name }}</b></td>
+			<td class="advisory1"><b>{{ x.Email }}</b></td>
+			<td class="advisory1"><b><a href="tel: {{x.Phone}} ">{{ x.Phone }}</a></b></td>					
+		</tr>
+		
+  </tbody>
+</table>
+
+</div>
+
+  </ion-content>
+</ion-view>

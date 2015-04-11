@@ -97,6 +97,46 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.committe', {
+    url: '/committe',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/committe.html'        
+      }
+    }
+  })
+  .state('tab.c_advisory_team', {
+    url: '/c_advisory_team',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/c_advisory_team.html'        
+      }
+    }
+  })
+  .state('tab.c_chapter_team', {
+    url: '/c_chapter_team',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/c_chapter_team.html'        
+      }
+    }
+  })
+  .state('tab.c_steering_team', {
+    url: '/c_steering_team',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/c_steering_team.html'        
+      }
+    }
+  })
+  .state('tab.c_volunteer_team', {
+    url: '/c_volunteer_team',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/c_volunteer_team.html'        
+      }
+    }
+  })
    
    .state('tab.sponsor', {
     url: '/sponsor',

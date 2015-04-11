@@ -9,7 +9,11 @@ angular.module('starter.controllers', [])
 .controller('MyCtrl', function($scope) {
   $scope.title = 'Ionic';
 })
-
+.controller('PhonecallTab' ,function ( phonenumber ) {
+    var call = "tel:" + phonenumber;
+    alert('Calling ' + call ); //Alert notification is displayed on mobile, so function is triggered correctly!
+    document.location.href = call;
+})
 
 
 .controller('AccountCtrl', function($scope) {
@@ -24,6 +28,21 @@ angular.module('starter.controllers', [])
    $scope.navSlide = function(index) {
         $ionicSlideBoxDelegate.slide(index, 500);
     }
+})
+
+.controller('CommitteCtrl', function($scope, $http) {
+   $http.get("http://www.techroversolutions.com/Ionic_Mayu/fetch_member.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('AdvisoryCtrl', function($scope, $http) {
+   $http.get("http://www.techroversolutions.com/Ionic_Mayu/advisory_team.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('ChaptersCtrl', function($scope, $http) {
+   $http.get("http://www.techroversolutions.com/Ionic_Mayu/chapter_team.php")
+   .success(function (response) {$scope.names = response.records;});
 })
 
 .controller('SponsorCtrl', function($scope)

@@ -3086,10 +3086,9 @@ a.subdued {
     .bar.bar-stable.bar-footer {
       background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
   .bar.bar-positive {
-    
-    background: url('/img/bg.jpg') no-repeat; 
-    background-size:100% auto;
-    
+    border-color: #0c63ee;
+    background-color: #387ef5;
+    background-image: linear-gradient(0deg, #0c63ee, #0c63ee 50%, transparent 50%);
     color: #fff; }
     .bar.bar-positive .title {
       color: #fff; }
@@ -3559,10 +3558,10 @@ a.subdued {
     color: #11c1f3; }
 
 .tabs-assertive > .tabs, .tabs.tabs-assertive {
- 
-  background: url('/img/bg.jpg') no-repeat; 
-  background-size:100% auto;
-   color: #fff; }
+  border-color: #e42012;
+  background-color: #ef473a;
+  background-image: linear-gradient(0deg, #e42012, #e42012 50%, transparent 50%);
+  color: #fff; }
   .tabs-assertive > .tabs .tab-item .badge, .tabs.tabs-assertive .tab-item .badge {
     background-color: #fff;
     color: #ef473a; }

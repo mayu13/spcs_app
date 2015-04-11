@@ -1,0 +1,21 @@
+<ion-view title="Convention Steering Committee">
+<ion-content class="padding">
+     <div ng-app="myApp" ng-controller="CommitteCtrl">
+	 <center>
+	<table>
+
+	<tbody>
+	<tr>
+			<td class="advisory_head"><h4><b><font color="#0095bd">Name</font></b></h4></td>
+			<td class="advisory_head"><h4><b><font color="#0095bd">Email</font></b></h4></td>
+		</tr>
+		<tr ng-repeat="x in names">
+			<td class="advisory"><b>{{ x.Name }}</b></td>
+			<td class="advisory"><b>{{ x.Email }}</b></td>
+		</tr>
+  </tbody>
+</table>
+</center>
+</div>
+  </ion-content>
+</ion-view>

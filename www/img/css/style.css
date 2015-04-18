@@ -1,0 +1,120 @@
+
+.h_color{
+background-color: #0095bd;
+}
+
+.advisory1{
+
+padding-top:5%;
+
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.advisory{
+
+padding-top:5%;
+width: 60%;
+}
+
+.res_img{
+width: 100%;
+height: auto;
+padding-top: 10%;
+padding-bottom: 20%;
+padding-left: 5%;
+padding-right: 5%;
+
+}
+
+.spcs_img{
+height: auto%;
+width: 100%;
+}
+
+.bg{
+background-color: #F2F2F2;
+}
+.p
+{
+color: black;
+}
+.drop_down{
+ position:relative;
+}
+.your-logo-css {
+      font-family: AnyFonts;
+}
+.history_color{
+background-color: #CEE3F6;
+
+}
+.img
+{
+width: 100%;
+height:auto;
+
+}
+.table_title
+{
+border-width: 1px;
+background-color: #0095bd;	
+}
+.table_data
+{
+background-color: red;
+}
+.sch_title
+{
+background-color: #0095bd;
+}
+.sch
+{
+background-color: #F6CECE;
+}
+.box {
+	width:100%;
+	height:50%;	
+	margin:40px auto;
+}
+.effect1{
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+.about_img
+{
+width: 100%;
+
+}
+.pane {
+    background-color: #fff;
+}
+.home_img
+{
+height: 100%;
+}
+
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 100%;
+}
+.scroll-content{
+  background:url('http://tabloidcolumn.com/wp-content/uploads/2013/10/black-and-white-abstract3_edited-3.jpg') no-repeat;
+  background-size:100% 100%;
+}

@@ -6,23 +6,44 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('MailCtrl', function($scope, $cordovaSocialSharing){
+
+	$scope.shareAnywhere = function()
+	{
+	 $cordovaSocialSharing.share("Click Here To Download SPCSUSA App...", "For SPCSUSA App..", null, "https://play.google.com/store/apps/details?id=com.ionicframework.spcsmayu334368");
+	// $cordovaSocialSharing.share("This is a message to share...hellooo", "subject.........", "null...attchement", "http://blog.nraboy.com");
+	}
+	
+  $scope.shareViaWhatsApp = function(message, image, link) {
+     $cordovaSocialSharing
+       .shareViaWhatsApp(message, image, link)
+       .then(function(result) {
+       
+         // Success!
+       }, function(err) {
+         // An error occurred. Show a message to the user
+          alert("Cannot share on WhatsApp");
+       });
+   }
+	
+	
+})
 .controller('MyCtrl', function($scope) {
   $scope.title = 'Ionic';
 })
-.controller('PhonecallTab' ,function ( phonenumber ) {
-    var call = "tel:" + phonenumber;
-    alert('Calling ' + call ); //Alert notification is displayed on mobile, so function is triggered correctly!
-    document.location.href = call;
+
+
+.controller('SplashCtrl', function($scope, $cordovaSplashscreen) {
+  $cordovaSplashscreen.show();
 })
 
-
 .controller('AccountCtrl', function($scope) {
-  
 })
 
 .controller('ChatsCtrl', function($scope) {
   
 })
+
 
 .controller('DetailCtrl', function($scope, $ionicSlideBoxDelegate) {
    $scope.navSlide = function(index) {
@@ -83,9 +104,10 @@ angular.module('starter.controllers', [])
         });
  
         $scope.map = map;
-    });
- 
+    }); 
 })
+
+ 
 
 
 

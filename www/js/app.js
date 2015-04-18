@@ -1,5 +1,5 @@
 
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngSanitize', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -12,6 +12,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 })
+
+
+//.controller('AccountCtrl', function($scope) {
+ //$scope.myHTML = '<a href="http://www.spcsusa.org/2015/texas/convention/welcome.html" name="abc">Click Here Go To Our Website</a> ';
+//})
+//.controller('RegiCtrl', function($scope) {
+ //$scope.myHTML1 = '<center><a href="http://www.spcsusa.org/2015/texas/convention/allregistration"><b>Click here For Registration</b></a> </center>';
+//})
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
  
@@ -146,6 +154,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  
+  .state('tab.regi', {
+    url: '/regi',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/regi.html'        
+      }
+    }
+  })
    
     .state('tab.gallery', {
     url: '/gallery',
@@ -186,6 +203,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-dash': {
         templateUrl: 'templates/r_map.html'        
+      }
+    }
+  })
+  .state('tab.r_airways', {
+    url: '/r_airways',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/r_airways.html'        
+      }
+    }
+  })
+  .state('tab.r_city_guide', {
+    url: '/r_city_guide',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/r_city_guide.html'        
       }
     }
   })

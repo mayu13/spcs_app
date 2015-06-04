@@ -12,66 +12,77 @@
 	</div>
 	<h4><b><center>Program Schedule :</center></b></h4>
 	
-		<div class="card">
+		<div class="card"  ng-controller="SchCtrl">
 			<div class="item item-text-wrap history_color">
-			 <center><b><font color="red">Thrusday, 2 July 2015</font></b></center>
+				<center><b><font color="red" size=2>Thrusday, 2 July 2015</font></b></center>
 			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Daytime :</font> None</b></center></div>			
-			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Evening (Traditional) :</font> Early Registration & Hasya Darbar</b></center></div>			
-			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Evening (Youth) :</font> Ice Breaker</b></center></div>			
+			<div class="row sch">
+			<center>
+				<table>	
+					<tbody>		
+						<tr ng-repeat="x in names">
+							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
+							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
 			</div>
 		</div>
 		
-		<div class="card">
+		<div class="card"  ng-controller="SchhCtrl">
 			<div class="item item-text-wrap history_color">
-			 <center><b><font color="red">Friday, 3 July 2015</font></b></center>
+			 <center><b><font color="red" size=2>Friday, 3 July 2015</font></b></center>
 			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Daytime :</font> Registration & Opening Ceremony</b></center></div>			
-			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Evening (Traditional) :</font> Kathiyawadi Dayro</b></center></div>			
-			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Evening (Youth) :</font> Youth Entertainment</b></center></div>			
+			<div class="row sch">
+			<center>
+				<table>	
+					<tbody>		
+						<tr ng-repeat="x in names">
+							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
+							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
 			</div>
 		</div>
 		
-		<div class="card">
+		<div class="card"  ng-controller="SchhhCtrl">
 			<div class="item item-text-wrap history_color">
-			 <center><b><font color="red">Saturday, 4 July 2015</font></b></center>
+			 <center><b><font color="red" size=2>Saturday, 4 July 2015</font></b></center>
 			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Daytime :</font>Outing, Cultural Program & Inspirational Speeches</b></center></div>			
+			<div class="row sch">
+			<center>
+				<table>	
+					<tbody>		
+						<tr ng-repeat="x in names">
+							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
+							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
 			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Evening (Traditional) & (Youth) :</font> Ras-Garaba</b></center></div>			
-			</div>
-			
-			
 		</div>
 		
-		<div class="card">
+		<div class="card"  ng-controller="SchlastCtrl">
 			<div class="item item-text-wrap history_color">
-			 <center><b><font color="red">Sunday, 5 July 2015</font></b></center>
+			 <center><b><font color="red" size=2>Sunday, 5 July 2015</font></b></center>
 			</div>
-			<div class="row sch">		
-				<div class="col"><center><b><font color="#0095bd">Cultural Program & Closing Ceremony 11AM to 12PM</font></b></center></div>			
+			<div class="row sch">
+			<center>
+				<table>	
+					<tbody>		
+						<tr ng-repeat="x in names">
+							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
+							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
 			</div>
-			
 		</div>
 		
-		
-		
-		
-		
-  
-	
-	
 	</ion-content>
 </ion-view>

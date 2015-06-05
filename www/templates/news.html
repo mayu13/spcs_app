@@ -1,7 +1,24 @@
 <ion-view title="Latest News">
 <ion-content class="padding">
+     <div ng-app="myApp" ng-controller="NewsCtrl">
+	 <center>
+	<table>
+	
+	<tbody>
+		
+		<tr ng-repeat="x in names">
+			<td class="advisory"><b> {{ x.News }}</b></td>
+		</tr>
+  </tbody>
+    </table>
+	</center>
+</div>
+  </ion-content>
+</ion-view>
 
-	<div class="card">
+
+<!--
+<div class="card">
 		<div class="item item-text-wrap h_color">
 				<a href="http://www.spcsusa.org/2015/texas/convention/welcome">July 2015 Registration Is Now open, Click on this Click</a>
 		</div>
@@ -11,7 +28,4 @@
 		<div class="item item-text-wrap h_color">
 				<a href="http://www.spcsusa.org/images/SPCS-Life-Membership-fillable-form.pdf">Apply For SPCS Life Membership for Convention Discount</a>
 		</div>
-	</div>
-
-  </ion-content>
-</ion-view>
+	</div>-->

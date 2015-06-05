@@ -1,17 +1,13 @@
-<ion-view title="Convention Advisory Committee">
+<ion-view title="Latest News">
 <ion-content class="padding">
-     <div ng-app="myApp" ng-controller="SchCtrl">
+     <div ng-app="myApp" ng-controller="NewsCtrl">
 	 <center>
 	<table>
 	
 	<tbody>
-		<tr>
-			<td><h4><b><font color="#0095bd">Name</font></b></h4></td>
-			<td ><h4><b><font color="#0095bd">Time</font></b></h4></td>
-		</tr>
+		
 		<tr ng-repeat="x in names">
-			<td><b> {{ x.Name }}</b></td>
-			<td> <b>{{ x.Time }}</b></td>
+			<td class="advisory"><b> {{ x.News }}</b></td>
 		</tr>
   </tbody>
     </table>

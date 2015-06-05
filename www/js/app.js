@@ -240,7 +240,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           controller: 'ChatsCtrl'
         }
       }
-    });
+    })
+	.state('tab.member', {
+    url: '/member',
+    views: {
+      'tab-member': {
+        templateUrl: 'templates/tab-member.html',
+        controller: 'MemberCtrl'
+      }
+    }
+  });
    
   $urlRouterProvider.otherwise('/tab/dash');
 

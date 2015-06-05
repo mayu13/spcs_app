@@ -167,6 +167,10 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('MemberCtrl', function($scope) {
+  
+})
+
 
 .controller('DetailCtrl', function($scope, $ionicSlideBoxDelegate) {
    $scope.navSlide = function(index) {
@@ -206,6 +210,11 @@ angular.module('starter.controllers', [])
 
 .controller('SchlastCtrl', function($scope, $http) {
    $http.get("http://www.techroversolutions.com/Ionic_Mayu/sch_last.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('NewsCtrl', function($scope, $http) {
+   $http.get("http://www.techroversolutions.com/Ionic_Mayu/news.php")
    .success(function (response) {$scope.names = response.records;});
 })
 

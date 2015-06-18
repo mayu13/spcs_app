@@ -1,248 +1,456 @@
-
-<ion-view title="Convention Volunteer Team">
+<ion-view title="Volunteer Name">
 <ion-content class="padding">
-<div ng-app="myApp" ng-controller="CoCtrl">
-   
-  
-   <div>
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Budget and Finance</b>
-            </div>
-            <select>	
-				<option>Name</option>
-                <option>Piyush Ghelani</option>
-                <option>Jaysukh Sabhaya</option>
-                <option>Sanjay Malani</option>
-			
-            </select>			
-        </div>
-    </div>
+     <div ng-app="myApp">
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Public Relations</b>
-            </div>
-            <select>
-				<option>Name</option>
-                <option>Jasmat Sutaria</option>
-                <option>Piyush Ghelani</option>
-                <option>Sanjay Malani </option>
-            </select>
-        </div>
-    </div>
-	
-	<div class="list">
-        <div class="item item-input item-select drop_down">
-            <div class="input-label">
-                <b>Sponsorship, Advertising</b>
+
+	<div class="card"  ng-controller="DecoCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Decoration & Stage</font></b></center>
+			</div>
+			<div class="row b_color">
+		
+				<table>
 				
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Dhirubhai Babaria</option>
-                <option>Haresh Bhungalia</option>
-                <option>Jasmat Sutaria </option>
-            </select>
-        </div>
-    </div>
+					<tbody>	
+						<tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Rita Sutaria</b></font></font></td></tr>
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>							
+						</tr>
+					</tbody>
+					
+				</table>
+			
+			</div>
+		</div>
+		
+		
+		<div class="card"  ng-controller="DirCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Directory & Souvenir</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+							<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SafCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Facility Safety & Transportation</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
 	
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Program Development& Entertainment	</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Kavita Sutaria</option>
-                <option>Kiran Patel</option>
-                <option>Piyush Ghelani</option>
-            </select>
-        </div>
-    </div>
+	<div class="card"  ng-controller="CoCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Food & Service</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Jayesh Babariya</b></font></font></td></tr>					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>
+						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="GenCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>General Coordinator</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   				
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="HealthCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Health & Emergency</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Dr. Mayur Satani</b></font></font></td></tr>					
+									
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="HosCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Hospitality & Guest Services</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Manoj Sutaria</b></font></font></td></tr>					
+									
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="KidsCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Kid's Program/Women</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="OutCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Outing Event</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Avani Kakadia</b></font></font></td></tr>					
+								
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="ProgCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Program Development & Entertainmnent</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                     <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kavita Sutaria, Mukesh Patel</b></font></font></td></tr>					
+								
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Kids Program</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Kiran Patel </option>
-                <option>Kavita Sutaria</option>
-            </select>
-        </div>
-    </div>
+		<div class="card"  ng-controller="RelCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Public Relation</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Tushar Savaliya</b></font></font></td></tr>					
+								
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Registration/Website</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Bharat Sutaria</option>
-                <option>Vishal Rajpara</option>
-                <option>Vishnu Patel</option>
-            </select>
-        </div>
-    </div>
+	<div class="card"  ng-controller="LostCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Registration & Lost Found</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                     <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Mayur Ranolia</b></font></font></td></tr>					
+									
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SenCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Senior Citizens</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Ashokbhai Rupani</b></font></font></td></tr>					
+								
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SponserCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Sponsorship, Advertisement & Fund Raisin</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    				
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		<div class="card"  ng-controller="TransCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Transportation</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    				
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="YouthCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Youth Forum</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Nilam Gajera</b></font></font></td></tr>					
+								
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Audio/Video& Photography</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Prashant Gajera</option>
-                <option>Ghanshyam Babaria</option>
-                <option>Piyush Ghelani</option>
-            </select>
-        </div>
-    </div>
+	<div class="card"  ng-controller="PhotoCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>A/V & Photography</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                     <tr><td>Chair Person: </td></tr>					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Decoration& Stage</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Ramesh Kakadiya</option>
-                <option>Rita Sutaria</option>
-            </select>
-        </div>
-    </div>
+	<div class="card"  ng-controller="BudgetCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Budget & Finance</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                     <tr><td>Chair Person: </td></tr>					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Email</font></td>
+							
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1>{{ x.Email }}</font></td>						
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Directory& Souvenir</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Bharat Gajera</option>
-                <option>Bharat Sutaria</option>
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Facility& Safety</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Prashant Gajera</option>
-                <option>Jaysukh Hirapara</option>
-				  <option>Arvind Patel</option>
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Food& Cleaning Services</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Jayesh Babaria</option>
-                <option>Hitesh Gondaliya</option>
-				  <option>Vipul Diora</option>
-				 <option>Rita Sutaria</option> 
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Health& Emergency</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Dr. Dhaval Satani</option>
-                <option>Dr. Rajiv Amipara</option>				
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Hospitality and Guest Services</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Dhwanish Italia</option>
-                <option>Mukesh Babaria</option>				 
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Transportation</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Prashant Gajera</option>
-                <option>Ghanshyam Kakadia</option>			
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Senior Citizens</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Ashokbhai Rupani </option>
-             
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Youth Forum</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Avni Kakadia</option>
-                <option>Nilam Gajera</option>
-				<option>Khushi Sutaria</option>	
-				<option>Frank Patel</option>	
-				<option>Ajay Babaria</option>
-				<option>Rajan Babaria</option>	
-            </select>
-        </div>
-    </div>
 	
-	<div class="list">
-        <div class="item item-input item-select">
-            <div class="input-label">
-                <b>Women’s Forum</b>			
-            </div>			
-            <select>
-				<option>Name</option>
-                <option>Kavita Sutaria</option>
-                <option>Kiran Patel</option>		
-				<option>Hansa Gadhia</option>					
-            </select>
-        </div>
-    </div>
-</div>
-</div>
+	</div>
   </ion-content>
 </ion-view>

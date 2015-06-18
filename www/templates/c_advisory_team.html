@@ -1,4 +1,4 @@
-<ion-view title="Convention Advisory Committee">
+<ion-view title="Advisory Committee">
 <ion-content class="padding">
      <div ng-app="myApp" ng-controller="AdvisoryCtrl">
 	 <center>
@@ -10,8 +10,8 @@
 			<td class="advisory_head"><h4><b><font color="#0095bd">Email</font></b></h4></td>
 		</tr>
 		<tr ng-repeat="x in names">
-			<td class="advisory"><b> {{ x.Name }}</b></td>
-			<td class="advisory"> <b>{{ x.Email }}</b></td>
+			<td class="advisory"> {{ x.Name }}</td>
+			<td class="advisory"> <u>{{ x.Email }}</u></td>
 		</tr>
   </tbody>
     </table>

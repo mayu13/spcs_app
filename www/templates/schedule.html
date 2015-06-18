@@ -1,4 +1,4 @@
-<ion-view title="Entertainment & Program Guide">
+<ion-view title="Program Guide">
 <ion-content class="padding">
 	<div class="card">
 	<div class="item item-text-wrap history_color">
@@ -13,16 +13,22 @@
 	<h4><b><center>Program Schedule :</center></b></h4>
 	
 		<div class="card"  ng-controller="SchCtrl">
-			<div class="item item-text-wrap history_color">
+			<div class="item item-text-wrap mayu">
 				<center><b><font color="red" size=2>Thrusday, 2 July 2015</font></b></center>
 			</div>
-			<div class="row sch">
+			<div class="row b_color">
 			<center>
-				<table>	
-					<tbody>		
+				<table>
+					<tbody>				
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>
 						<tr ng-repeat="x in names">
-							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
-							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1>{{ x.Time }}</font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Location }}</b></font></td>
 						</tr>
 					</tbody>
 				</table>
@@ -31,16 +37,22 @@
 		</div>
 		
 		<div class="card"  ng-controller="SchhCtrl">
-			<div class="item item-text-wrap history_color">
-			 <center><b><font color="red" size=2>Friday, 3 July 2015</font></b></center>
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Friday, 3 July 2015</font></b></center>
 			</div>
-			<div class="row sch">
+			<div class="row b_color">
 			<center>
-				<table>	
-					<tbody>		
+				<table>
+					<tbody>				
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>
 						<tr ng-repeat="x in names">
-							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
-							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1>{{ x.Time }}</font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Location }}</b></font></td>
 						</tr>
 					</tbody>
 				</table>
@@ -49,16 +61,22 @@
 		</div>
 		
 		<div class="card"  ng-controller="SchhhCtrl">
-			<div class="item item-text-wrap history_color">
+			<div class="item item-text-wrap mayu">
 			 <center><b><font color="red" size=2>Saturday, 4 July 2015</font></b></center>
 			</div>
-			<div class="row sch">
+			<div class="row b_color">
 			<center>
 				<table>	
-					<tbody>		
+					<tbody>	
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>					
 						<tr ng-repeat="x in names">
-							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
-							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1>{{ x.Time }}</font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Location }}</b></font></td>
 						</tr>
 					</tbody>
 				</table>
@@ -66,17 +84,25 @@
 			</div>
 		</div>
 		
+		
+		
 		<div class="card"  ng-controller="SchlastCtrl">
-			<div class="item item-text-wrap history_color">
+			<div class="item item-text-wrap mayu">
 			 <center><b><font color="red" size=2>Sunday, 5 July 2015</font></b></center>
 			</div>
-			<div class="row sch">
+			<div class="row b_color">
 			<center>
 				<table>	
-					<tbody>		
+					<tbody>	
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>					
 						<tr ng-repeat="x in names">
-							<td class="advisory"><center><font color="#0095bd" size=2><b> {{ x.Name }}</b></font></center></td>
-							<td class="advisory"><center><font size=1>{{ x.Time }}</font></center></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1>{{ x.Time }}</font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Location }}</b></font></td>
 						</tr>
 					</tbody>
 				</table>

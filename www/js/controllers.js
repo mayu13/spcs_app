@@ -86,6 +86,20 @@ angular.module('starter.controllers', [])
 	// $cordovaSocialSharing.share("This is a message to share...hellooo", "subject.........", "null...attchement", "http://blog.nraboy.com");
 	}
 	
+	
+	 $scope.shareViaTwitter = function(message, image, link) {
+     $cordovaSocialSharing
+       .shareViaTwitter(message, image, link)
+       .then(function(result) {
+         // Success!
+         alert("success : "+result);
+       }, function(err) {
+         // An error occurred. Show a message to the user
+         alert("Cannot share on Twitter");
+       });
+   }
+
+	
   $scope.shareViaWhatsApp = function(message, image, link) {
      $cordovaSocialSharing
        .shareViaWhatsApp(message, image, link)
@@ -98,17 +112,7 @@ angular.module('starter.controllers', [])
        });
    }
    
-    $scope.shareViaTwitter = function(message, image, link) {
-     $cordovaSocialSharing
-       .shareViaTwitter(message, image, link)
-       .then(function(result) {
-         // Success!
-         alert("success : "+result);
-       }, function(err) {
-         // An error occurred. Show a message to the user
-         alert("Cannot share on Twitter");
-       });
-   }
+   
    $scope.shareViaFacebook = function(message, image, link) {
      $cordovaSocialSharing
        .shareViaFacebook(message, image, link)
@@ -119,36 +123,7 @@ angular.module('starter.controllers', [])
          alert("Cannot share on Facebook");
        });
    }
-  // access multiple numbers in a string like: '0612345678,0687654321'
-   $scope.shareViaSMS = function(message, number) {
-     $cordovaSocialSharing
-       .shareViaSMS(message, number)
-       .then(function(result) {
-        alert(result);
-         // Success!
-       }, function(err) {
-         // An error occurred. Show a message to the user
-       });
-   }
-  // TO, CC, BCC must be an array, Files can be either null, string or array
-   $scope.shareViaFacebook = function(message, subject, toArr, bccArr, file) {
-     $cordovaSocialSharing
-       .shareViaEmail(message, subject, toArr, bccArr, file)
-       .then(function(result) {
-         // Success!
-       }, function(err) {
-         // An error occurred. Show a message to the user
-       });
-   }
-   $scope.shareViaFacebook = function(socialType, message, image, link) {
-    $cordovaSocialSharing
-      .canShareVia(socialType, message, image, link)
-      .then(function(result) {
-        // Success!
-      }, function(err) {
-        // An error occurred. Show a message to the user
-      });
-    }
+ 
 
 	
 	
@@ -197,6 +172,100 @@ angular.module('starter.controllers', [])
    $http.get("http://www.techroversolutions.com/Ionic_Mayu/sch.php")
    .success(function (response) {$scope.names = response.records;});
 })
+
+.controller('CoCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_food.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+.controller('DecoCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_deco.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('DirCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_dir.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+
+
+.controller('SafCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_safety.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('GenCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_gen.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('HealthCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_health.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('HosCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_hos.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('KidsCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_kids.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+.controller('OutCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_out.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('ProgCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_program.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+
+.controller('RelCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_pub_rel.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('LostCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_reg_lost.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+
+.controller('SenCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_sen.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('SponserCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_sponser.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('TransCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_trans.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+.controller('YouthCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_youth.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+.controller('BudgetCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_budget.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+.controller('PhotoCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_photo.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
+
+
+
 
 .controller('SchhCtrl', function($scope, $http) {
    $http.get("http://www.techroversolutions.com/Ionic_Mayu/sch_two.php")

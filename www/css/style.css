@@ -1,3 +1,4 @@
+.text { font-family: Rockwell; }
 
 .h_color{
 background-color: #0095bd;
@@ -66,6 +67,13 @@ width: 100%;
 height:auto;
 
 }
+.mayu{
+
+background-color: #C5BBBB;}
+.b_color{
+background-color: #fff;
+}
+
 .table_title
 {
 border-width: 1px;

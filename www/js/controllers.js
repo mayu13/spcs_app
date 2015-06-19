@@ -297,11 +297,11 @@ angular.module('starter.controllers', [])
 	
 			$scope.images.push({ src: "img/logo1.png"});
 		
-			$scope.images.push({ src: "img/logo2.png"});
+		
 			$scope.images.push({ src: "img/sec.jpg"});
 			$scope.images.push({ src: "img/logo3.jpg"});
 			
-			$scope.images.push({ src: "img/tech.png"});
+			$scope.images.push({ src: "img/multi_logo.jpg"});
 			$scope.images.push({ src: "img/bank.png"});
 			
 		

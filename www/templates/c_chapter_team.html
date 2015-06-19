@@ -7,13 +7,15 @@
 	<tbody >
 		<tr>			
 			<td class="advisory_head"><h4><font color="#0095bd" size=2><b>Name</b></font></h4></td>				
+			<td class="advisory_head"><h4><font color="#0095bd" size=2><b>City</b></font></h4></td>
 			<td class="advisory_head"><h4><font color="#0095bd" size=2><b>Phone</b></font></h4></td>
 		</tr>
 	
 		
 		<tr ng-repeat="x in names" >			
-			<td class="advisory1">{{ x.Name }}</td>			
-			<td class="advisory1"><a href="tel: {{x.Phone}} ">{{ x.Phone }}</a></td>					
+			<td class="advisory1">{{ x.Name }}</td>	
+			<td class="advisory1">{{ x.City }}</td>	
+			<td class="advisory1"><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></td>
 		</tr>
 		
   </tbody>

@@ -263,6 +263,11 @@ angular.module('starter.controllers', [])
    .success(function (response) {$scope.names = response.records;});
 })
 
+.controller('WomenCtrl', function($scope, $http) {
+    $http.get("http://www.techroversolutions.com/Ionic_Mayu/v_women.php")
+   .success(function (response) {$scope.names = response.records;});
+})
+
 
 
 

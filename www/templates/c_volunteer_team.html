@@ -8,19 +8,20 @@
 				<center><b><font color="red" size=2>Decoration & Stage</font></b></center>
 			</div>
 			<div class="row b_color">	
-			<center>			
+					
 				<table>				
 					<tbody>	
-						<tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Rita Sutaria</b></font></font></td></tr>
+						<center><tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Rita Sutaria</b></font></font></td></tr></center>
 						<tr>
+						<center>
 							<td><font color="red" size=1>Name</font></td>
-							<td><font color="red" size=1>Phone</font></td>
+							<td><font color="red" size=1>Phone</font></td></center>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
-					</tbody></center>					
+					</tbody>				
 				</table>			
 			</div>
 		</div>
@@ -42,7 +43,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -64,7 +65,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -88,7 +89,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -110,7 +111,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -133,7 +134,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -156,7 +157,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -172,13 +173,15 @@
 			<center>
 				<table>
 					<tbody>	
+					 <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kiran Patel</b></font></font></td></tr>					
+					
                     	<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -201,7 +204,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -217,14 +220,14 @@
 			<center>
 				<table>
 					<tbody>	
-                     <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kavita Sutaria, Mukesh Patel</b></font></font></td></tr>					
+                     <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kavita Sutaria, Mukesh Patel, Kiran Patel, Hansa Gadhia, Piyush Ghelani</b></font></font></td></tr>					
 						<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -240,14 +243,14 @@
 			<center>
 				<table>
 					<tbody>	
-                    <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Tushar Savaliya</b></font></font></td></tr>					
+                    <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Tushar Savaliya, Sanjay Malani, Piyush Ghelani</b></font></font></td></tr>					
 						<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -270,7 +273,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -280,20 +283,21 @@
 		
 		<div class="card"  ng-controller="SenCtrl">
 			<div class="item item-text-wrap mayu">
-				<center><b><font color="red" size=2>Senior Citizens</font></b></center>
+				<center><b><font color="red" size=2>Senior Citizen</font></b></center>
 			</div>
 			<div class="row b_color">
 			<center>
 				<table>
 					<tbody>	
-                   <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Ashokbhai Rupani</b></font></font></td></tr>					
-					<tr>
+					<tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Ashokbhai Rupani</b></font></font></td></tr>					
+					
+                    	<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -309,13 +313,15 @@
 			<center>
 				<table>
 					<tbody>	
+					 <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Haresh Bhungalia, Jasmat Sutaria, Dhirubhai Babaria</b></font></font></td></tr>					
+					
                     	<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -330,13 +336,15 @@
 			<center>
 				<table>
 					<tbody>	
+					 <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b></b></font></font></td></tr>					
+					
                     	<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -359,7 +367,7 @@
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -375,14 +383,15 @@
 			<center>
 				<table>
 					<tbody>	
-                     <tr><td>Chair Person: </td></tr>					
+                     <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Prashant Gajera</b></font></font></td></tr>					
+									
 						<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -398,14 +407,15 @@
 			<center>
 				<table>
 					<tbody>	
-                     <tr><td>Chair Person: </td></tr>					
+                     <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Jaysukh Sabhaya, Sanjay Malani, Piyush Ghelani</b></font></font></td></tr>					
+									
 						<tr>
 							<td><font color="red" size=1>Name</font></td>
 							<td><font color="red" size=1>Phone</font></td>
 						</tr>
 						<tr ng-repeat="x in names">
 							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
-							<td ><font size=1>{{ x.Phone }}</font></td>							
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
 						</tr>
 					</tbody>
 				</table>
@@ -413,7 +423,29 @@
 			</div>
 		</div>
 	
-	
+	<div class="card"  ng-controller="WomenCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Women Forum</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   <tr><td><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b></b></font></font></td></tr>					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+	<br/></br/>
 	
 	
 	

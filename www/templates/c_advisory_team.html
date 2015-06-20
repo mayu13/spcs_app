@@ -11,7 +11,7 @@
 		</tr>
 		<tr ng-repeat="x in names">
 			<td class="advisory"> {{ x.Name }}</td>
-			<td class="advisory"> <u>{{ x.Email }}</u></td>
+			<td class="advisory"> <a ng-href="mailto: {{x.Email}} ">{{ x.Email }}</a></td>
 		</tr>
   </tbody>
     </table>
